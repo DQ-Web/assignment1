@@ -1,22 +1,54 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <!-- General meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
 
-<head>
-  <!-- General meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
+    <title>Assignment 1</title>
 
-  <title>Assignment 1</title>
+    <!-- materialize style sheet-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="styles/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <!-- materialize style sheet-->
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="styles/materialize/css/materialize.min.css"
-    media="screen,projection"
-  />
-  <!-- personal stylesheet-->
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-</head>
-<body>
-  <h1>Hello</h1>
-</body>
+    <!-- personal stylesheet-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav id="nav-bar" class="teal">
+      <div class="nav-wrapper container">
+        <a href="#" data-target="mobile-nav-links" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <a href="/index.html" id="logo-container" class="brand-logo"
+          >Assignment 1</a
+        >
+        <!-- Nav Links -->
+        <ul id="nav-links" class="right hide-on-med-and-down">
+          <li><a href="pages/quymbee.html">Quymbee</a></li>
+          <li><a href="pages/david.html">David</a></li>
+        </ul>
+        <!-- #nav-links end -->
+      </div>
+    </nav>
+    <!-- #nav-bar end -->
+
+    <!-- Mobile Nav Links -->
+    <ul id="mobile-nav-links" class="sidenav">
+      <li><a href="pages/quymbee.html">Quymbee</a></li>
+      <li><a href="pages/david.html">David</a></li>
+    </ul>
+    <!-- #mobile-nav-links end -->
+    <h1>Hello</h1>
+  </body>
+</html>

@@ -1,8 +1,19 @@
 /* ----------------------------------------------------------------
 	Basic
 -----------------------------------------------------------------*/
+body {
+  font-family: Arial !important;
+}
+
 section {
     margin-top: 16px;
+}
+
+/* ----------------------------------------------------------------
+    Helper Classes
+-----------------------------------------------------------------*/
+.mt-auto {
+    margin-top: auto;
 }
 
 /* ----------------------------------------------------------------
@@ -25,4 +36,12 @@ img.profile {
     .card.horizontal .card-image img {
         margin: auto;
     }
+}
+
+.custom-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
