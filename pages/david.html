@@ -8,37 +8,62 @@
   <title>Assignment 1</title>
 
   <!-- materialize style sheet-->
-  <link type="text/css" rel="stylesheet" href="../styles/materialize/css/materialize.min.css" media="screen,projection" />
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="../styles/materialize/css/materialize.min.css"
+    media="screen,projection"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+
   <!-- personal stylesheet-->
   <link rel="stylesheet" type="text/css" href="../styles/style.css" />
 </head>
 
 <body>
   <!-- Nav Bar -->
-    <nav id="nav-bar" class="teal">
-      <div class="nav-wrapper container">
-        <a href="#" data-target="mobile-nav-links" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
-        <a href="/assignment1/index.html" id="logo-container" class="brand-logo"
-          >Assignment 1</a
-        >
-        <!-- Nav Links -->
-        <ul id="nav-links" class="right hide-on-med-and-down">
-          <li><a href="/assignment1/pages/quymbee.html">Quymbee</a></li>
-          <li><a href="/assignment1/pages/david.html">David</a></li>
-        </ul>
-        <!-- #nav-links end -->
-      </div>
-    </nav>
-    <!-- #nav-bar end -->
+  <nav id="nav-bar" class="teal">
+    <div class="nav-wrapper container">
+      <a href="#" data-target="mobile-nav-links" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
+      <a href="/assignment1/index.html" id="logo-container" class="brand-logo"
+        >Assignment 1</a
+      >
+      <!-- Nav Links -->
+      <ul id="nav-links" class="right hide-on-med-and-down">
+        <li><a href="/assignment1/pages/quymbee.html">Quymbee</a></li>
+        <li><a href="/assignment1/pages/david.html">David</a></li>
+      </ul>
+      <!-- #nav-links end -->
+    </div>
+  </nav>
+  <!-- #nav-bar end -->
+
+  <!-- Mobile Nav Links -->
+  <ul id="mobile-nav-links" class="sidenav">
+    <li>
+      <a href="/assignment1/pages/david.html" class="red accent2 white-text"
+        >David</a
+      >
+    </li>
+    <li>
+      <a href="/assignment1/pages/quymbee.html" class="cyan darken1 white-text"
+        >Quymbee</a
+      >
+    </li>
+  </ul>
+  <!-- #mobile-nav-links end -->
 
   <section>
     <div class="container">
       <div class="col s12 m7">
         <div class="card horizontal">
           <div class="card-image">
-            <img class="profile" src="../images/Jaguar-stream.jpg">
+            <img class="profile" src="../images/Jaguar-stream.jpg" />
           </div>
           <div class="card-stacked">
             <div class="card-action">
@@ -62,4 +87,30 @@
     </div>
   </section>
 
+  <!-- scripts starts here -->
+  <!--Import jQuery before materialize.js-->
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="../styles/materialize/js/materialize.min.js"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".sidenav").sidenav({
+        menuWidth: 400,
+        edge: "left",
+        draggable: true,
+        onOpen: function () {
+          console.log("menu open");
+        },
+        onClose: function () {
+          console.log("menu close");
+        },
+      });
+    });
+  </script>
 </body>

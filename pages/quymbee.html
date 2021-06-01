@@ -20,6 +20,12 @@
 
     <!-- personal stylesheet-->
     <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+
+    <style>
+      body {
+        background: #e0f2f1;
+      }
+    </style>
   </head>
 
   <body>
@@ -44,8 +50,18 @@
 
     <!-- Mobile Nav Links -->
     <ul id="mobile-nav-links" class="sidenav">
-      <li><a href="pages/quymbee.html">Quymbee</a></li>
-      <li><a href="pages/david.html">David</a></li>
+      <li>
+        <a href="/assignment1/pages/david.html" class="red accent2 white-text"
+          >David</a
+        >
+      </li>
+      <li>
+        <a
+          href="/assignment1/pages/quymbee.html"
+          class="cyan darken1 white-text"
+          >Quymbee</a
+        >
+      </li>
     </ul>
     <!-- #mobile-nav-links end -->
 
@@ -84,11 +100,38 @@
               </div>
             </div>
             <div class="card-action">
-              <a href="../index.html">Back to home</a>
+              <a href="/assignment1/index.html">Back to home</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- scripts starts here -->
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../styles/materialize/js/materialize.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav({
+          menuWidth: 400,
+          edge: "left",
+          draggable: true,
+          onOpen: function () {
+            console.log("menu open");
+          },
+          onClose: function () {
+            console.log("menu close");
+          },
+        });
+      });
+    </script>
   </body>
 </html>
