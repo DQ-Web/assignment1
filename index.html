@@ -8,7 +8,17 @@
   <title>Assignment 1</title>
 
   <!-- materialize style sheet-->
-  <link type="text/css" rel="stylesheet" href="styles/materialize/css/materialize.min.css" media="screen,projection" />
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="styles/materialize/css/materialize.min.css"
+    media="screen,projection"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+
   <!-- personal stylesheet-->
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
@@ -17,13 +27,27 @@
   <!-- Nav Bar -->
   <nav id="nav-bar" class="grey">
     <div class="nav-wrapper container">
-      <a href="/index.html" id="logo-container" class="brand-logo">Assignment 1</a>
+      <a href="#" data-target="mobile-nav-links" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
+      <a href="/index.html" id="logo-container" class="brand-logo"
+        >Assignment 1</a
+      >
       <!-- Nav Links -->
       <ul id="nav-links" class="right hide-on-med-and-down">
-        <li><a href="#">Quymbee</a></li>
-        <li><a href="#">David</a></li>
-      </ul><!-- #nav-links end -->
+        <li><a href="quymbee.html">Quymbee</a></li>
+        <li><a href="david.html">David</a></li>
+      </ul>
+      <!-- #nav-links end -->
     </div>
-  </nav><!-- #nav-bar end -->
+  </nav>
+  <!-- #nav-bar end -->
+
+  <!-- Mobile Nav Links -->
+  <ul id="mobile-nav-links" class="sidenav">
+    <li><a href="quymbee.html">Quymbee</a></li>
+    <li><a href="david.html">David</a></li>
+  </ul>
+  <!-- #mobile-nav-links end -->
   <h1>Hello</h1>
 </body>
